@@ -1,0 +1,15 @@
+Lists:
+
+Physical Representation:
+Array
+Linked List
+
+Access Methods:
+Random - MUST be an ARRAY, since elements are right next to each other
+Sequential - Accesses elements in a particular sequence
+First in First Out
+Last in FIrst Out
+
+Other Issues:
+Static/Dynamic Allocation
+Recursive/Non-recursive

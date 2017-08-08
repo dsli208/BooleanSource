@@ -1,0 +1,51 @@
+Practice Midterm - WEBSITE
+
+9)
+
+public class SortedIntList {
+    private IntNode head;
+    private IntNode tail;
+    public boolean remove(int item) {
+        if (item > head.getData() || item < tail.getData())
+            return false;
+        if (head.getData() == item) {
+            if (head.getLink != null) //two or more nodes
+                head = head.getLink();
+            else //(head == tail)
+                head = null;
+            return true;
+        }
+        IntNode nodePtr = head;
+        while (nodePtr.getLink != null) {
+            if (nodePtr.getLink().getData() == item) {
+                nodePtr.setLink(nodePtr.getLink().getLink());
+                return true;
+            }
+            nodePtr = nodePtr.getLink();
+        }
+        return false;
+    }
+
+    public int maximum() throws EmptyListException {
+        if (head == null)
+            throw new EmptyListException();
+        return head.getData();
+    }
+}
+
+10)
+
+public int evaluate(String postfix) {
+    int answer = 0;
+    IntStack stack = new IntStack();
+    int num1 = -1;
+    int num2 = -1;
+    for (int i = 0; i < postfix.length(); i++) {
+        if (postfix.charAt(i) >= '0' && postfix.charAt(i) <= '9') {
+            if (num1 == -1)
+                num1 = Character.toNumericalValue(postfix.charAt(i));
+            else if (num2 == -1)
+                num2 = Character.toNumericalValue(postfix.charAt(i));
+        }
+    }
+}

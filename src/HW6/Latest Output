@@ -1,0 +1,348 @@
+Welcome to the TLT Classroom Finder!
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+A
+Enter the name of the new building to be added: 
+NewCS
+NewCS was successfully added to this campus. (Add an additional newline)
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+OldCS
+That building does not exist. (Enter a break)
+Enter a room (building + room number): OldCS 2120
+Either bad input or room does not exist.  Remember: input must be building name (one word) + room number!
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+NewCS
+Enter one of the following choices below: 
+A - Add Room
+D - Delete Room
+E - Edit room
+
+A
+Please enter room number: 106
+Enter the number of seats: 20
+Please enter any AV equipment this room has: (separate by commas!) (Bad nextLine() here) Does this room have a whiteboard (Y/N)? N
+Does this room have a chalkboard (Y/N)? N
+Room 106 has successfully been added to this building.
+Enter a room (building + room number): BUILD STOPPED (total time: 1 minute 49 seconds)
+
+2nd Output:
+run:
+Welcome to the TLT Classroom Finder!
+Checking for save file...
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+A
+Enter the name of the new building to be added: 
+NewCS
+NewCS was successfully added to this campus.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+Enter a building to edit: NewCS
+Enter one of the following choices below: 
+A - Add Room
+D - Delete Room
+E - Edit room
+
+A
+Please enter room number: 116
+Enter the number of seats: 50
+Please enter any AV equipment this room has: (separate by commas!) Interactive whiteboard, projector
+Does this room have a whiteboard (Y/N)? Y
+Does this room have a chalkboard (Y/N)? N
+Room 116 has successfully been added to this building.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+C
+NewCS: 116 
+
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+Enter a building to edit: A
+That building does not exist.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+Enter a building to edit: NewCS
+Enter one of the following choices below: 
+A - Add Room
+D - Delete Room
+E - Edit room
+
+A
+Please enter room number: 120
+Enter the number of seats: 70
+Please enter any AV equipment this room has: (separate by commas!) projector, Interactive whiteboard, ECHO Camera
+Does this room have a whiteboard (Y/N)? Y
+Does this room have a chalkboard (Y/N)? N
+Room 120 has successfully been added to this building.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+L
+Enter a building: NewCS
+Total Seats: 120
+Percent of rooms containing whiteboards: 100.0% 
+Percent of rooms containing blackboards: 0.0% 
+List of AV Equipment that classrooms in this building have: Interactive whiteboard  projector projector  Interactive whiteboard  ECHO Camera (EQUIPMENT PRINTS TWICE)
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+Q
+Do you want to save (Y/N)? Y
+Saving file...
+File successfully saved. (DOES SAVING ACTUALLY WORK?)
+Thank you for using the TLT ClassroomFinder!
+
+Test: Erraneous nextLine()/next(), etc. Scanner methods
+
+run:
+Welcome to the TLT Classroom Finder!
+Checking for save file...
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+A
+Enter the name of the new building to be added: 
+Fake
+Fake was successfully added to this campus.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+Enter a building to edit: Fake
+Enter one of the following choices below: 
+A - Add Room
+D - Delete Room
+E - Edit room
+
+D
+Enter the number of the room to be deleted: 101
+101 successfully deleted.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+
+	at java.lang.String.charAt(String.java:658)
+	at HW6.RoomLookup.main(RoomLookup.java:53)
+C:\Users\dsli\AppData\Local\NetBeans\Cache\8.1\executor-snippets\run.xml:53: Java returned: 1
+BUILD FAILED (total time: 13 seconds)
+
+run:
+Welcome to the TLT Classroom Finder!
+Checking for save file...
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+A
+Enter the name of the new building to be added (one word): 
+OldCS
+OldCS was successfully added to this campus.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+Enter a building to edit: A
+That building does not exist.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+Enter a building to edit: OldCS
+Enter one of the following choices below: 
+A - Add Room
+D - Delete Room
+E - Edit room
+
+A
+Please enter room number: 2120
+Enter the number of seats: 50
+Please enter any AV equipment this room has: (separate by commas!) Projector
+Does this room have a whiteboard (Y/N)? N
+Does this room have a chalkboard (Y/N)? Y
+Room 2120 has successfully been added to this building.
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+E
+Enter a building to edit: OldCS
+Enter one of the following choices below: 
+A - Add Room
+D - Delete Room
+E - Edit room
+
+E
+Enter the room number to edit: 2120
+The old number of seats in this room is 50
+Do you wish to change the number of seats (Y/N)? Y
+Enter the new number of seats: 60
+The new number of seats is now 60
+Old AV Equipment: [Ljava.lang.String;@33909752 //Erraneous output for AV Equip
+If you would like to change the list of AV Equipment, enter the new list of AV Equipment here, separated by commas: 
+Projector, interactive whiteboard
+AV Equipment List successfully changed!  The new list is: [Ljava.lang.String;@55f96302
+Does this room have a whiteboard ((Y/N), or press Enter to ignore)? 
+Y
+Does this room have a chalkboard ((Y/N), or press Enter to ignore)? N
+This room has been successfully edited!
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+L
+Enter a building: OldCS
+Total Seats: 60
+Percent of rooms containing whiteboards: 100.0% 
+Percent of rooms containing blackboards: 0.0% 
+List of AV Equipment that classrooms in this building have: Projector  interactive whiteboard 
+Enter the letter for one of the following choices below: 
+A - Add Building: with name
+D - Delete Building: by name
+E - Edit Building: by name
+F - Find Room: Find by name, and print the details
+S - Search
+C-List buildings on campus and their rooms.
+L-List summary of building: by name
+Q - Quit
+
+Q
+Do you want to save (Y/N)? N
+Thank you for using the TLT ClassroomFinder!

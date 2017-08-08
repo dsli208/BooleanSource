@@ -1,0 +1,26 @@
+Test contains() method for ArrayList():
+
+public static void main(String[] args) {
+        String[] testEquipment = new String[]{"whiteboard", "whiteboard", "blackboard"};
+        ArrayList<String> deleteDuplicates = new ArrayList<String>();
+        for (String equip: testEquipment)
+            if (!(deleteDuplicates.contains(equip)))
+                deleteDuplicates.add(equip);
+        String printLine = "";
+        for (String s: deleteDuplicates) {
+            printLine += s + " ";
+        }
+        System.out.println(printLine);
+    }
+//Eliminates "whiteboard" duplicate
+
+Test for erraneous (accidentally empty) String inputs:
+public static void main(String[] args) {
+        String test = "";
+        char c = test.charAt(0);
+        switch (c) {
+            case 'a': System.out.println("test failed");
+            default: System.out.println("test success");
+        }
+    }
+//Throws StringIndexOutOfBoundsException

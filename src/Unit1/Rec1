@@ -1,0 +1,18 @@
+NOTE: When using these methods within the Object class itself, it is more efficient to use the private variables, since they are accessible in this case
+clone() notes:
+super.clone() with a reference object will ONLY work when you have PRIVATE variables
+
+More info on clone():
+https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#clone()
+
+Remember, the clone() method only works if it returns an Object, so you MUST CAST DOWN
+
+- To deep copy in an array of Object subclasses, you MUST create clones of those objects, or you will simply be copying references
+
+equals() notes:
+- For the Menu assignment, for loop across each element in the arrays of BOTH objects being compared, making sure each one is EXACTLY is the same
+- Worst case, for a list, should be O(n) --> for differing amount of looping operations; Best case, O(1) --> set number of operations
+
+Remember, if you say object1 = object2, then object 1 essentially becomes object 2; their properties change together, to create a SEPARATE OBJECT, use the CLONE() method
+
+Pointers - point to sections of memory

@@ -1,0 +1,76 @@
+SOLUTIONS TO RECITATION 2 PROBLEMS:
+
+1) a) Linked list
+b) Linked list
+c) Array
+d) Doubly linked list/array
+e) Array
+f) Array
+
+2) public int longSeq(ListNode n) { //where n is presumed to be the head
+    if (n == null) //Empty list
+        return 0;
+    int longestSequence = 1;
+    int currentSequence = 1;
+    ListNode currentNode = n;
+    ListNode prev = null;
+    while (currentNode.getLink() != null) {
+        prev = currentNode;
+        currentNode = currentNode.getLink(); //Assuming we are using a singly-linked list
+        if (currentNode.equals(prev)) {
+            currentSequence++;
+            if (currentSequence > longestSequence)
+                longestSequence = currentSequence;
+        }
+        else {
+            currentSequence = 1;
+        }
+    }
+    return longestSequence;
+}
+
+3) public static void deleteNode(ListNode head, ListNode d) {
+        //Case if d is equal to the head, meaning it is the only element in the list
+        if (d == head) {
+            d = null;
+            head = null;
+            //return true
+        }
+        
+        else {
+        //Assuming we have a singly linked list
+        ListNode beforeD = head;
+        while (beforeD.getLink() != d && beforeD.getLink() != null) { //This either sets beforeD to the node before d that is supposed to be deleted, or if we start after d or d doesn't exist
+            beforeD = beforeD.getLink();
+        }
+        if (d.getLink() == null) { //Meaning d is the tail
+            tail = beforeD; //if there is such a thing as a tail variable in the ListNode class
+            d = null
+            }
+        else {
+        ListNode afterD = d.getLink();
+        beforeD.setLink(afterD);
+            }
+        }
+}
+
+
+4) public ListNode reverse(ListNode start) {
+        //Assuming start refers to the head
+        if (start == null)
+            return null;
+        else if (start.getLink() == null)
+            return start;
+        ListNode n = null; //Refers to the ListNode to set the current tracker node's link to
+        ListNode newNode = start; //The "tracker" node in the center.  Links are changed, centered from this node
+        ListNode newNodeLink = start.getLink(); //The node positioned after newNode (the original link from newNode)
+        while (newNodeLink != null) { 
+            newNode.setLink(n); //Sets the link of newNode to n (in the first time, it just sets this to null to denote this as the new end of the list)
+            n = newNode; //shifts n one node back
+            newNode = newNodeLink; //We set newNode to newNodeLink.  Note we cannot use the getLink() method since we have already changed the link of newNode to reference the object before and no longer the object with reference newNodeLink, hence the variable needed
+            newNodeLink = newNodeLink.getLink(); //Shift newNodeLink
+        }
+        newNode.setLink(n);
+        return newNode;
+}
+        

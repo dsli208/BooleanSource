@@ -1,0 +1,82 @@
+run:
+Welcome to A Smiley Movie Data Base, the happiest way to manage your DVD's
+I - Import Movie <Title>
+D - Delete Movie <Title>
+M - Sort Movies
+A - Sort Actors
+Q - Quit
+I
+Enter a movie title: Harry Potter and the Sorcerer's Stone
+Harry Potter and the Sorcerer's Stone has been added to your library.
+I - Import Movie <Title>
+D - Delete Movie <Title>
+M - Sort Movies
+A - Sort Actors
+Q - Quit
+I
+Enter a movie title: Harry Potter and the Chamber of Secrets
+Harry Potter and the Chamber of Secrets has been added to your library.
+I - Import Movie <Title>
+D - Delete Movie <Title>
+M - Sort Movies
+A - Sort Actors
+Q - Quit
+I
+Enter a movie title: Harry Potter and the Prisoner of Azkaban
+Harry Potter and the Prisoner of Azkaban has been added to your library.
+I - Import Movie <Title>
+D - Delete Movie <Title>
+M - Sort Movies
+A - Sort Actors
+Q - Quit
+I
+Enter a movie title: Harry Potter and the Goblet of Fire
+Harry Potter and the Goblet of Fire has been added to your library.
+I - Import Movie <Title>
+D - Delete Movie <Title>
+M - Sort Movies
+A - Sort Actors
+Q - Quit
+A
+AA - Alphabetically Ascending
+AD - Alphabetically Descending 
+NA - By Number of Movies They Are In Ascending
+ND - By Number of Movies They Are In 
+
+NA
+Name                          Movie Count
+Richard Harris                1   
+Maggie Smith                  1   
+Robbie Coltrane               1   
+Saunders Triplets             1   
+Rupert Grint                  1   
+Emma Watson                   1   
+Pam Ferris                    1   
+Fiona Shaw                    1   
+Eric Sykes                    1   
+Timothy Spall                 1   
+David Tennant                 1   
+Richard Griffiths             2   
+Daniel Radcliffe              3   
+I - Import Movie <Title>
+D - Delete Movie <Title>
+M - Sort Movies
+A - Sort Actors
+Q - Quit
+M
+Select an option below: 
+ TA -By Title Ascending 
+TD - By Title Descending 
+YA - By Release Date Ascending
+YD - By Release Date Descending 
+TA
+Title                                   YearActors                                                                                              
+Harry Potter and the Chamber of Secrets 2002Daniel Radcliffe, Rupert Grint, Emma Watson, Richard Griffiths                                      
+Harry Potter and the Goblet of Fire     2005Eric Sykes, Timothy Spall, David Tennant, Daniel Radcliffe                                          
+Harry Potter and the Prisoner of Azkaban2004Daniel Radcliffe, Richard Griffiths, Pam Ferris, Fiona Shaw                                         
+Harry Potter and the Sorcerer's Stone   2001Richard Harris, Maggie Smith, Robbie Coltrane, Saunders Triplets                                    
+I - Import Movie <Title>
+D - Delete Movie <Title>
+M - Sort Movies
+A - Sort Actors
+Q - Quit

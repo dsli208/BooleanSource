@@ -1,0 +1,56 @@
+Recursive method for setting each node to its depth in a tree
+public void setDepth(int depth) { //Modification of the preorder algorithm
+    data = depth;
+    if (left != null) {
+        left.setDepth(depth + 1);
+    }
+    if (right != null) {
+        right.setDepth(depth + 1);
+    }
+}
+
+root.setDepth(0);
+
+PRACTICE QUESTION: Write a recursive method which, when called on the root of a tree, changes the data of the entire tree so that each node's data is equal to its position in a preorder traversal
+
+root.number(1);
+
+public int number(int val) {
+    data = val;
+    if (left != null)
+        val = left.number(val + 1);
+    if (right != null)
+        val = right.number(val + 1);
+    return val;
+}
+
+BinarySearchTree methods:
+
+public void inorder() {
+    if (left != null) {
+        left.inorder();
+    }
+    System.out.println(value);
+    if (right != null) {
+        right.inorder();
+    }
+}
+public void inorder() {
+    inorder(root);
+}
+
+private void inorder(node n) {
+    if (n.getLeft() != null) {
+        inorder(n.getLeft());
+    }
+    System.out.println(n.getData());
+    if (n.getRight() != null) {
+        inorder(n.getRight());
+    }
+}
+
+BINARY SEARCH TREE PSEUDOCODE:
+(1) tree empty: add node
+(2) if tree not empty: root value (compare) data
+    (2a) if root value > data: go left
+    (2b) if root value < data: go right

@@ -1,0 +1,9 @@
+1) 
+a. O(n) - ARRAY, whenever you change something, you must copy the whole array (FOR BOTH PUSH AND POP)
+b. O(n) - BOTH
+c. O(1) - BOTH
+d. O(1) to PUSH, O(n) to POP
+e. O(1) for BOTH
+f. Array
+
+2) 

@@ -1,0 +1,2 @@
+Stacks are ONE-SIDED lists - everything has to be done from one side --> Last in first out
+Peek - see what element is at the top - O(1) since we are not changing anything

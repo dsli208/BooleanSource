@@ -1,0 +1,45 @@
+Extra Notes for Unit 2:
+
+When searching the list, when to replace nodePtr with cursor?  If target is found, replace nodePtr with cursor
+
+Searching the list(Another way):
+public IntNode listSearch(int target) {
+        IntNode nodePtr = head;
+        while (nodePtr != null) {
+            if (target == nodePtr.getData()) {
+                return nodePtr;
+            }
+            NodePtr = nodePtr.getLink
+        }
+    }
+
+Another implementation of REMOVE method:
+public boolean remove(int target) {
+IntNode prevPtr = head;
+if (target == head.getData())
+head = head.getLink();
+else {
+while (prevPtr != tail && prevPtr.getLink().getData() != target) {
+prevPtr = prevPtr.getLink();
+}
+if (prevPtr != tail)
+prevPtr.setLink(prevPtr.getLink().getLink());
+
+return (prevPtr != tail);
+}
+
+LinkedList applications - file storage.  If stored as one piece, things would have to be moved around on the hard disk ... too much effort, so files are CLUSTERED
+When spread out, the files bits are FRAGMENTED ... takes longer to read the data
+Programs in memory though, must be in one piece (ex. for trying to access an array in the program), but placed among pages in memory - random access addresses can be easily accessed
+
+Optional Exercise: Write a method that reverses a singly linked list, using at most three temporary pointers
+
+Actual type - the real type of Object
+When trying to assign an Object to a data type, the actual type MUST MATCH THE DATA TYPE; if not, ClassCastException is thrown
+
+Wrapper classes contain many useful methods, such as parse for ints and doubles, and toLowerCase for chars, etc.
+They can be created using primitive values
+
+For linked lists, constructors REQUIRE an Object as the data type
+
+Note: For linked lists, you may want to implement the Iterator class: https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
